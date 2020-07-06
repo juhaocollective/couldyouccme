@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>could you cc me?</title>
+<style>
+*{
+	font-family: Arial;
+	margin:0px;
+	padding: 0px;
+}
+.frame{
+	pointer-events: none;
+	position: fixed;
+	top: 30%;
+	left: -50px;
+	z-index: 12;
+}
+.couldyouccme{
+	display: block;
+	margin: auto;
+	width: 100%
+}
+
+
+
+nav{
+	z-index: 11;
+	position: fixed;
+	right: 10%;
+	top: 10%;
+}
+
+.menu{
+	margin: -1px;
+	padding: 0px;
+	background: white;
+	color: black;
+	float: right;
+	text-align: center;
+	width: 150px;
+	height: 36px;
+	font-size: 20pt;
+	border: 1px solid black;
+	display: block;
+	vertical-align: middle;
+}
+
+.menu:hover .popup{
+	position: relative;
+	margin-right: -1px;
+	margin-top: 5px;
+	visibility: visible;
+	border: 1px solid black;
+	overflow: scroll;
+	float: right;
+	width: 500px;
+	height: 400px;
+	text-align: left;
+}
+
+.menu:hover{
+	background: yellow;
+}
+
+.popup:hover{
+	box-shadow: 0px 0px 10px 5px yellow;
+}
+
+.popup{
+	background: white;
+	visibility: hidden;
+	float: left;
+	height: 10px;
+	padding: 10px;
+}
+
+.title{
+	font-size: 70pt;
+	text-align: center;
+}
+
+.title:hover{
+	color: yellow;
+	-webkit-text-stroke-width: 3px;
+ 	-webkit-text-stroke-color: black;
+}
+
+.bodytext{
+	margin-left: 150px;
+	
+}
+
+ul.a{
+	list-style-type: square;
+	line-height: 100%;
+}
+ul.a:hover{
+	background-color: yellow;
+}
+
+.highlight:hover{
+	background-color: yellow;
+}
+
+.sticker{
+	float:left;
+	cursor:move;
+	position: absolute;
+	z-index: 10;
+}
+
+img{
+	margin: 0px;
+	padding: 0;
+	display: block;
+	vertical-align: middle;
+}
+
+.nee{
+	background: yellow;
+	text-align: center;
+}
+.dragme{
+	box-shadow: 0px 0px 50px 25px yellow;
+	visibility: visible;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+ 	-moz-animation: glow 1s ease-in-out infinite alternate;
+  	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow{
+	from {
+		box-shadow: 0 0 10px 5px yellow, 0 0 10px 5px yellow;
+	}to{
+		box-shadow: 0 0 50px 25px yellow, 0 0 50px 25px yellow;
+	}
+}
+
+#draggable1{
+	left: 5%;
+	top: 10%;
+}
+#draggable2{
+	left: 45%;
+	top: 15%;
+}
+#draggable3{
+	left: 70%;
+	top: 12.5%;
+}
+#draggable4{
+	left: 2.5%;
+	top: 35%;
+}
+#draggable5{
+	left: 12.5%;
+	top: 7.5%;
+}
+#draggable6{
+	left: 60%;
+	top: 35%;
+}
+#draggable7{
+	left: 7.5%;
+	top: 70%;
+}
+#draggable8{
+	left: 80%;
+	top: 5%;
+}
+#draggable9{
+	left: 85%;
+	top: 30%;
+}
+#draggable10{
+	left: 17.5%;
+	top: 55%;
+}
+#draggable11{
+	left: 30%;
+	top: 20%;
+}
+#draggable12{
+	left: 40%;
+	top: 50%;
+}
+
+
+</style>
+	</head>
+
+	<body>
+		<div class="frame">
+			<img class="couldyouccme" src="couldyouccme.gif" alt="couldyouccme">
+		</div>
+
+		<nav>
+			<div class="menu">
+				<p>
+					<b>about</b>
+				</p>
+				<div class ="popup">
+					<div class ="textbox">
+						<p>
+							<b><span class = "title">Juhao Collective</span></b></br>
+							<div class='bodytext'></br>started as a passion project of a group of like-minded Dutch-born Asian creatives. The collective aspires <span class="highlight">to bring people with shared interests together to collaborate, start new dialogues and form different narratives.</span> Juhao Collective curates and produces content on Asian matters and/or work by Asian creatives.</div></br>
+							</br>
+							<b><span class = "title">‘could you cc me?'</span></b></br>
+							<div class='bodytext'></br>is a zine that sends a <span class="highlight">carbon copy (cc)</span> of a collaborative effort back to every participant. Just like your cc’ed e-mails, we chain you together and zip you up into a <span class="highlight">nice publication</span>. Join us and find out what every edition brings.</div></br>
+							<b><span class = "title">Contact</span></b></br>
+							<div class='bodytext'><a href="https://www.instagram.com/juhaocollective/">instagram</a></br><a href="mailto:juhaocollective@gmail.com">e-mail</a></div></br>
+
+
+
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="menu">
+				<p>
+					<b>open call</b>
+				</p>
+				<div class ="popup">
+					<div class="textbox">
+						<p>
+							<b><span class = "title">↵ & esc</span></b></br>
+							<div class='bodytext'></br><span class="highlight">[enter and exit] / edition01 / 'could you cc me?'</span></div></br>
+							
+							<div class='bodytext'>This edition is about the relation between <span class="highlight">‘the private and the public’</span>. In the current pandemic of COVID-19, we’ve seen a redefinition of these concepts. A physical shift of what used to be public, had turned deserted and a personal private space served a public purpose. Now that certain countries are relaxing their measures, we again are reconsidering what the private is in relation to the public. The civil rights movement has likewise seen a reenforcement of urgency in voicing out one’s personal opinions in the public domain. These public movements, again, influence people to educate themselves and others around them.</br>
+							</br>
+							As we can see, a constant flux of information online and worldwide organised protests challenge ‘the private and the public’. How have the past few months changed your view on ’the private and the public’? How does it look like, sound like, feel like, taste like or even smell like?</div></br>
+							<div class='bodytext'>We challenge you to express your experience with 'could you cc me?’. We’d like to receive a free form of visualisation in any medium of your choice together with</div></br>
+							<div class='bodytext'>
+								<ul class="a">
+									<li>the title of your work,</li>
+									<li>a +/- 50 word explanation,</li>
+									<li>your medium and the following information.</li>
+									</br>
+									<li>(studio) name</li>
+									<li>country of residence</li>
+									<li>instagram handle and/or website</li>
+									<li>e-mail</li>
+								</ul>
+							</div>
+						</p>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+
+
+		<div id="draggable1" class="sticker">
+			<div id="enter1">
+				<img src="enter1.gif" alt="gif" width="200" height="300">
+			</div>
+		</div>
+
+		<div id="draggable2" class="sticker">
+			<div id="exit1">
+				<img src="exit1.gif" alt="gif" width="300" height="200">
+			</div>
+		</div>
+
+		<div id="draggable3" class="sticker">
+			<div id="enter2">
+				<img src="enter2.gif" alt="gif" width="200" height="300">
+			</div>
+		</div>
+
+		<div id="draggable4" class="sticker">
+			<div id="exit2">
+				<img src="exit2.gif" alt="gif" width="300" height="200">
+			</div>
+		</div>
+
+		<div id="draggable5" class="sticker">
+			<div id="enter3">
+				<img src="enter3.gif" alt="gif" width="200" height="300">
+			</div>
+		</div>
+
+		<div id="draggable6" class="sticker">
+			<div id="exit3">
+				<img src="exit3.gif" alt="gif" width="300" height="200">
+			</div>
+		</div>
+
+		<div id="draggable7" class="sticker">
+			<div id="enter4">
+				<img src="enter4.gif" alt="gif" width="200" height="300">
+			</div>
+		</div>
+
+		<div id="draggable8" class="sticker">
+			<div id="exit4">
+				<img src="exit4.gif" alt="gif" width="300" height="200">
+			</div>
+		</div>
+
+		<div id="draggable9" class="sticker">
+			<div id="enter5">
+				<img src="enter5.gif" alt="gif" width="200" height="300">
+			</div>
+		</div>
+
+		<div id="draggable10" class="sticker">
+			<div id="exit5">
+				<img src="exit5.gif" alt="gif" width="300" height="200">
+			</div>
+		</div>
+
+		<div id="draggable11" class="sticker">
+			<div id="enter6">
+				<img src="enter6.gif" alt="gif" width="200" height="300">
+			</div>
+		</div>
+
+		<div id="draggable12" class="sticker">
+			<div id="exit6" class= "dragme">
+				<img src="exit6.gif"  alt="gif" width="300" height="200">
+				<p class= "nee">DRAG ME</p>
+			</div>
+		</div>
+		
+<script>
+function dragElement(elmnt) {
+	let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+	elmnt.onmousedown = dragMouseDown;
+	
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+window.addEventListener('DOMContentLoaded', (event) => {
+	console.log('DOM fully loaded and parsed');
+//Make the DIV element draggable:
+	dragElement(document.getElementById("draggable1"));
+	dragElement(document.getElementById("draggable2"));
+	dragElement(document.getElementById("draggable3"));
+	dragElement(document.getElementById("draggable4"));
+	dragElement(document.getElementById("draggable5"));
+	dragElement(document.getElementById("draggable6"));
+	dragElement(document.getElementById("draggable7"));
+	dragElement(document.getElementById("draggable8"));
+	dragElement(document.getElementById("draggable9"));
+	dragElement(document.getElementById("draggable10"));
+	dragElement(document.getElementById("draggable11"));
+	dragElement(document.getElementById("draggable12"));
+	});
+
+
+
+
+</script>
+	</body>
+</html>
